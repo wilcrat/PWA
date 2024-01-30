@@ -15,3 +15,13 @@ shareBtn.addEventListener("click", (event) => {
       .catch((error) => console.log("Error sharing", error));
   }
 });
+
+//multiple urls
+function page() {
+  let url = document.location.href;
+  const canonicalElement = document.querySelector("link[rel=canonical]");
+  if (canonicalElement !== null) {
+    url = canonicalElement.href;
+  }
+  navigator.share({ url });
+}

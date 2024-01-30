@@ -1,3 +1,6 @@
+* button {
+  cursor: pointer;
+}
 button {
   background-color: brown;
   border: none;
